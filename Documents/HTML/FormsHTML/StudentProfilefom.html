@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF8">
+    <title>Student|Profile</title>
+    <style>
+        body{
+            margin-top: 100px;
+            text-align: center;
+        }
+        form{
+            display: inline-block;
+            text-align: left;
+
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"]{
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #888;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            text-align: center;
+        }
+
+    </style>
+    </head>
+    <body>
+        <h3><b>Create Profile</b></h3> 
+        <form action="#" method="post">
+           <div>
+           <label for="firstname">First Name: </label>
+           <input type="text" id="firstname" name="firstname" placeholder="First Name">
+           </div>
+           <div>
+            <label for="lastname">Last Name: </label>
+            <input type ="text" id="lastname" name="lastname" placeholder="Last Name">
+           </div>
+           <div>
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" id="dob" name="dob" required>
+           </div>
+           <div>
+            <label for="age">Enter Age: </label>
+            <input type="number" min="10" max="100" name="Age" placeholder="Age">
+           </div>
+           <div>
+           <label for="gender">Gender:</label>
+           <input type="radio" id="gender" name="gender" checked>male 
+           <input type="radio" id="gender" name="gender">Female
+           </div>
+           <div>
+            <label for="C_address">Current Address: </label>
+            <textarea id="C_address" name="Current_address" rows="6" cols="40"></textarea>
+           </div>
+           <div>
+            <label for="P_address">Permanent Address: </label>
+            <textarea id="P_address" name="Permanent_address" rows="6" cols="40"></textarea>
+           </div>
+           <div style="text-align: center;">
+            <input type="submit" value="Create">
+           </div>
+        </form>
+    </body>
+</html>

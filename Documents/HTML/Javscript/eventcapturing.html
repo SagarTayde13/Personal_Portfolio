@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Event capturing</title>
+    </head>
+    <body>
+        <div id="dadaji" style="border: grey solid 1px;">Dadaji
+            <br>
+            <hr>
+            <div id = "papaji" style="border: greys solid 2px;">Papaji 
+                <br><br>    
+                <button id = "potaji">Potaji</button>
+            </div>
+        
+        </div>
+
+        <script>
+            document.getElementById("dadaji").addEventListener('click' , ()=>{
+                alert("dadaji got kickde during WW!");
+            },{capture:false});
+             document.getElementById("papaji").addEventListener('click' , ()=>{
+                alert("papaji saved dadaji during WW!");
+                 event.stopPropagation();
+            },{capture:false});
+             document.getElementById("potaji").addEventListener('click' , ()=>{
+                alert("potaji wins WW!");
+                event.stopPropagation();
+            });
+        </script>
+    </body>
+</html>

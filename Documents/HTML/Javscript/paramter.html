@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script>
+        function add(num1, num2) {
+            var value = num1 + num2;
+            alert("Addition is: " + value);
+        }
+
+        function sub(num1, num2) {
+            var value = num1 - num2;
+            alert("Subtraction is: " + value);
+        }
+
+        var i = parseInt(prompt("Enter num1: "));
+        var j = parseInt(prompt("Enter num2: "));
+        
+        document.write("<input type='button' value='Addition' onclick='add(" + i + "," + j + ")'>");
+        document.write("<input type='button' value='Subtraction' onclick='sub(" + i + "," + j + ")'>");
+    </script>
+</head>
+<body>
+</body>
+</html>

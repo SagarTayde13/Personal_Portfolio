@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sagar's portfolio</title>
+        <link rel="stylesheet" href="style2.css">
+     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Sagar.</a>
+            <nav class="navbar">
+               <a href="#">Home</a>
+                <a href="#">About</a>
+                 <a href="#">Service</a>
+                  <a href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="Home">
+                <div class="home-content">
+                    <h1>Hi,I am Sagar Tayde</h1>
+                    <h3><span class="typewriter"></span></h3>
+                    <p>this is sagar Tayde
+                        who is a master in fullstack developer Java and pretty mcuh can do
+                        everything related to that.i hope we can talk and get along.
+                        I stay updated with the latest tech trends and best practices
+                    </p>
+                    <div class="btn-box">
+                    <a href="#">Hire me</a>
+                    <a href="#">Talk to me</a>
+                    </div>
+                    <img id ="sagarimage1" src="sagarimg.png" alt="sagarimage" width="100%" height="700px">
+             </div>
+             <div class="home-sci">
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com"><i class='bx bxl-linkedin'></i></a>
+             </div>
+        </section>
+        <section class="projectts">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Employee system</h3>
+                    <p>idfjwnfwrnfwjrnfjenrfjekfnejfnjekfnfejfeffnwnfwenffwfwfwnfewfklwnfwf</p>
+                    <p><strong>tech used</strong>kdsnckkkndcsdncjndncdcnscncndjcbwjbcwjdc</p>
+                    <a href="#" class="btn-link">view project</a>
+                </div>
+                <div class="project">
+                    <h3>Employee system</h3>
+                    <p>idfjwnfwrnfwjrnfjenrfjekfnejfnjekfnfejfeffnwnfwenffwfwfwnfewfklwnfwf</p>
+                    <p><strong>tech used</strong>kdsnckkkndcsdncjndncdcnscncndjcbwjbcwjdc</p>
+                    <a href="#" class="btn-link">view project</a>
+                </div>
+                <div class="project">
+                    <h3>Employee system</h3>
+                    <p>idfjwnfwrnfwjrnfjenrfjekfnejfnjekfnfejfeffnwnfwenffwfwfwnfewfklwnfwf</p>
+                    <p><strong>tech used</strong>kdsnckkkndcsdncjndncdcnscncndjcbwjbcwjdc</p>
+                    <a href="#" class="btn-link">view project</a>
+                </div>
+            </div>
+
+        </section>
+         <div class="cursor-follower"></div>
+         <div class="cursor-follower-small"></div>
+         <script>
+             const mainCursor = document.querySelector('.cursor-follower');
+            const smallCursor = document.querySelector('.cursor-follower-small');
+
+            let mouseX = 0, mouseY = 0;
+            let mainX = 0, mainY = 0;
+            let smallX = 0, smallY = 0;
+
+            window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            });
+
+             function animateCursors() {
+            // First ball follows fast
+             mainX += (mouseX - mainX) * 0.1;
+             mainY += (mouseY - mainY) * 0.1;
+             mainCursor.style.transform = `translate(${mainX}px, ${mainY}px)`;
+
+             // Second ball follows slower
+             smallX += (mouseX - smallX) * 0.07;
+              smallY += (mouseY - smallY) * 0.07;
+              smallCursor.style.transform = `translate(${smallX}px, ${smallY}px)`;
+
+              requestAnimationFrame(animateCursors);
+            }
+
+             animateCursors();
+       </script>
+    </body>
+</html>

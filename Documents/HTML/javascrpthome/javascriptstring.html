@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>The strings</title>
+        <script>
+            function reverstring(str){
+                var reversed = "";
+                for(i=str.length-1;i>=0;i--){
+                    reversed += str[i]
+                    
+                }
+                return reversed;   
+            }
+            document.write(reverstring("hello"))
+            document.write("<br/>")
+
+
+            function palindromecheck(str1){
+                var reversed = "";
+                for(i=str1.length-1;i>=0;i--){
+                    reversed += str1[i];
+                }
+                if(reversed === str1){
+                   return "string is palindrome"
+                }
+                else{
+                    return "sring is not palindrome"
+                }
+            }
+            document.write(palindromecheck("madam"))
+            document.write("<br/>")
+            
+            function checkvowel(str2){
+            if(str2.includes("a","e","i","o","u")){
+
+            }
+            }
+            function capitalwords(str){
+                var words = str.split(" ");
+                var result = "";
+                for(var i=0;i<words.length;i++){
+                    var word = words[i];
+                    var capitalized = word[0].toUpperCase()+word.slice(1);
+                    result +=capitalized + " ";
+                }
+                return result.trim();
+            }
+            console.log(capitalwords("hello nigga"));
+        </script>
+    </head>
+</html>

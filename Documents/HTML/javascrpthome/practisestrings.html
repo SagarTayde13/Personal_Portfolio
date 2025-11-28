@@ -1,0 +1,50 @@
+<html>
+<head>
+    <script>
+        function change_color() {
+            document.getElementById("div1").style.backgroundColor = "pink";
+            document.getElementById("div2").style.backgroundColor = "green";
+        }
+        let num = prompt("enter number: ");
+        for(i=1;i<=10;i++){
+            let result = num*i;
+            document.write(result)
+            document.write("<br/>")
+        }
+        document.write("<br/>")
+        let num2 = prompt("enter number: ");
+        if(num2%2==0){
+            for(i=1;i<=10;i++){
+                if(i%2==0){
+                let result = num*i;
+                document.write(result);
+                document.write("<br/>");
+                }
+            }
+        }else{
+            for(i=10;i>=1;i--){
+                let result = num*i;
+                document.write(result);
+                document.write("<br/>")
+            }
+        }
+        document.write("<br/> ")
+        function setstyle1(){
+            document.getElementById("fname").style.background="yellow";
+        }
+        function setstyle2(){
+            document.getElementById("fname").style.background="lime";
+            document.getElementById("fname").style.height="50px";
+            document.getElementById("fname").style.width = "1000px";
+        }
+
+    </script>
+</head>
+<body>
+    <div id="div1" style="width: 50px; height: 50px;"></div>
+    <div id="div2" style="width: 50px; height: 50px;"></div>
+    <input type="button" onclick="change_color()" value="change color">
+    First name : <input type="text" onfocus="setstyle1()" onblur="setstyle2()" id = "fname" placeholder="Narayan"/><br/>
+    <p onmouseover = "alert('heyo wasssup')">click on this mf button</p>
+</body>
+</html>

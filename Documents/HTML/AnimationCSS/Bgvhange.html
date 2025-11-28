@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Bgchange</title>
+    </head>
+    <style>
+        fieldset{
+            width: 450px;
+            height: 50px;
+            -webkit-animation: firstanime 5s;
+            -webkit-animation-iteration-count: 3;
+        }
+        @-webkit-keyframes firstanime{
+            0%    {background: aqua; color: black;}
+            25%    {background: gray; color: white;}
+            50%    {background: white; color: orange;}
+            75%    {background: red; color: yellow;}
+            100%   {background: blue; color: green;}
+        }
+        body{
+            -webkit-animation:anime2 5s;
+            -webkit-animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @-webkit-keyframes anime2{
+            0%   {background-image:url(IMG_5851.jpg );}
+            25%   {background-image:url(image.png);}
+            50%   {background-image:url(IMG_5851.jpg);}
+            75%   {background-image:url(image.png);}
+            100%   {background-image:url(IMG_5851.jpg);}
+            
+        }
+    </style>
+    <body>
+        <fieldset>
+            <legend style="color: red;"><b>>Welcome to itvedant</b></legend>
+            <b style="padding: 0px 55px;">Here you will learn
+                advanced web development with
+            </b>
+        </fieldset>
+    </body>
+</html>

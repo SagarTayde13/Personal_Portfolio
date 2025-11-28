@@ -1,0 +1,24 @@
+<html>
+    <script>
+        let curency;
+        let value;
+        let total = 0;
+        while(true){
+            currency = (prompt("ENter y : "));
+            if(currency =="y"){
+                value = parseInt(prompt("Enter not value: "));
+                if(value == 10||value ==20){
+                    console.log(value+"real");
+                    total+=value
+                }
+                else{
+                    console.log("fake")
+                }
+            }
+            else{
+                break;
+            }
+        }
+        console.log(total)
+    </script>
+</html>

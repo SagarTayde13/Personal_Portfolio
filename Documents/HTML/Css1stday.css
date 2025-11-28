@@ -1,0 +1,13 @@
+body{
+    background: url(./images/bg\ for\ webstie.jpg);
+}
+.p2{
+    font-family: monospace;
+    color: cadetblue;
+    font-size: 40px;
+}
+#p1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: burlywood;
+    font-size: 30px;
+}

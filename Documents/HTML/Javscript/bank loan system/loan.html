@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            let loantype = parseFloat(prompt("Enter loan type: 1.Home loan 2.Personal loan 3.Education loan"));
+            let p = 10000;
+            let n = 12;
+            let SI;
+            switch (loantype) {
+                case 1:
+                    document.write("<h1>Home Loan</h1>");
+                    SI = (p * 8.7 * n) / 100;
+                    break;
+                case 2:
+                    document.write("<h1>Personal Loan</h1>");
+                    SI = (p * 10.5 * n) / 100;
+                    break;
+                case 3:
+                    document.write("<h1>Education Loan</h1>");
+                    SI = (p * 7.4 * n) / 100;
+                    break;
+                default:
+                    document.write("<h1>Invalid loan type</h1>");
+            }
+            if (SI !== undefined) {
+                document.write("<p>Simple Interest: " + SI + "</p>");
+            }
+        </script>
+    </head>
+</html>

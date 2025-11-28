@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Student | Sign up</title>
+    <style>
+        body{
+            
+            text-align: center;
+             margin-top: 120px;
+        }
+        form{
+            display: inline-block;
+            text-align: center;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #888;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            text-align: center;
+            padding: 5px 15px;
+            font-size: 16px;
+            border: 1px solid #888;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form action="#" method="post">
+        <caption><h3><b>Sign Up</b></h3></caption>
+        <div>
+        <label for="usename"><b>Username: </b></label>
+        <input type="text" name="usename" value="" placeholder="Enter Email ID" required >
+        </div>
+        <div>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" id="password" required>
+        </div>
+        <div></div>
+        <label for="confirm"><b>Confirm password:</b></label>
+        <input type="password" id="confirm" required>
+        </div>
+         <div>
+            <input type="submit" value="Sign Up">
+        </div>
+    </form>
+    </center>
+</body>
+</html>
